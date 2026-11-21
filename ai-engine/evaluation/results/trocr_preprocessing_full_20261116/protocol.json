@@ -1,0 +1,6 @@
+{
+  "screen_gate": "CER reduction >=0.5 percentage points, WER non-increasing, exact matches non-decreasing, zero failures",
+  "confirmation_gate": "On disjoint next-two-lines/page: CER reduction >=0.25 percentage points, WER non-increasing, zero failures",
+  "full_gate": "Run only for a candidate passing both gates; accept no production change based only on subset evidence",
+  "test_split": "Never read or evaluated"
+}

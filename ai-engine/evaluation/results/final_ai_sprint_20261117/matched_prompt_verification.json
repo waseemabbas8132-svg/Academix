@@ -1,0 +1,6 @@
+{
+  "matched_cases": 7,
+  "identical_semantic_prompts": true,
+  "identical_generation_options": true,
+  "only_format_differs_for_compared_requests": "JSON response grammar (plus retention residency setting); deterministic validation differs as documented."
+}

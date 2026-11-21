@@ -1,0 +1,10 @@
+{
+  "synthetic_in_memory_only": true,
+  "contains_printed_text_and_graphical_ink": true,
+  "ocr_calls": 0,
+  "extracted_text": "Printed assignment question",
+  "sources": [
+    "pdf_text"
+  ],
+  "finding": "Any nonempty PDF text bypasses page OCR, including other graphical/handwritten content."
+}

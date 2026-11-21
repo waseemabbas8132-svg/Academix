@@ -1,0 +1,284 @@
+{
+  "cer": 0.16743708269132,
+  "wer": 0.3888888888888889,
+  "exact_match_accuracy": 0.023255813953488372,
+  "exact_matches": 1,
+  "total_evaluated_samples": 43,
+  "successful_samples": 43,
+  "failed_samples": 0,
+  "character_errors": 326,
+  "reference_characters": 1947,
+  "word_errors": 140,
+  "reference_words": 360,
+  "failures": [],
+  "status": "complete",
+  "variant": "contrast",
+  "configuration": {
+    "model_name": "microsoft/trocr-base-handwritten",
+    "checkpoint_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "local_files_only": true,
+    "split": "validation",
+    "phase": "screen",
+    "seed": 42,
+    "threads": 4,
+    "device": "cpu",
+    "batch_size": 1,
+    "dtype": "torch.float32",
+    "generation": {
+      "max_new_tokens": 192,
+      "do_sample": false,
+      "num_beams": 1,
+      "use_cache": true
+    },
+    "normalization": {
+      "unicode": "NFC",
+      "whitespace": "collapse Unicode whitespace to one ASCII space and trim",
+      "case": "preserved",
+      "punctuation": "preserved",
+      "accents": "preserved",
+      "cer_units": "Unicode code points including normalized spaces",
+      "wer_units": "whitespace-delimited words",
+      "aggregation": "corpus edit distance / total reference units; denominator at least 1",
+      "failures": "empty prediction for CER/WER; incorrect for exact match; all samples included"
+    },
+    "variants": {
+      "original": "RGB decode, unchanged cached processor square resize",
+      "existing": "Existing page preprocessing: median3, autocontrast cutoff1, contrast1.15, max2400",
+      "contrast": "Grayscale and autocontrast cutoff0; no denoising or clipping of histogram tails",
+      "clahe": "Grayscale local CLAHE clipLimit1.5 tileGrid8x2; no threshold or denoise",
+      "denoise": "Grayscale bilateral filter diameter5 sigmaColor15 sigmaSpace2; retain gray strokes",
+      "deskew": "Grayscale projection deskew within +/-3deg step0.5, >=5% gain, expanded white canvas",
+      "threshold": "Grayscale global Otsu binarization; experimental only",
+      "aspect": "Grayscale Lanczos fit into white 384x384 canvas, aspect ratio preserved",
+      "margin": "RGB white border max(2, round(height*0.05)) on every side; no crop or denoise"
+    },
+    "manifest_sha256": "56aaaee040a6ea2548bc6d738568729ce5f25d82a46c2d30b52488755e3103f1",
+    "baseline_predictions_sha256": "7dd1b4f6520fb4f14e2b4c7465b9f01c7358e453a1d4a25e2b3aae170ee5a98a",
+    "selection": "seeded per-page shuffle; screen first, confirmation next two; full all",
+    "selected_samples": [
+      {
+        "page_id": "071_018_003",
+        "crop_relative_path": "line_images/071_018_003__r4__r125__r001_l003_g000561.png"
+      },
+      {
+        "page_id": "071_021_002",
+        "crop_relative_path": "line_images/071_021_002__r2__r122__r001_l013_g000599.png"
+      },
+      {
+        "page_id": "071_044_003",
+        "crop_relative_path": "line_images/071_044_003__r4__r119__r001_l012_g000894.png"
+      },
+      {
+        "page_id": "071_059_003",
+        "crop_relative_path": "line_images/071_059_003__r4__r30__r001_l019_g001019.png"
+      },
+      {
+        "page_id": "071_105_003",
+        "crop_relative_path": "line_images/071_105_003__r2__r102__r001_l013_g001232.png"
+      },
+      {
+        "page_id": "071_106_002",
+        "crop_relative_path": "line_images/071_106_002__r3__r117__r001_l012_g001279.png"
+      },
+      {
+        "page_id": "071_120_002",
+        "crop_relative_path": "line_images/071_120_002__r5__r46__r002_l008_g001564.png"
+      },
+      {
+        "page_id": "071_151_003",
+        "crop_relative_path": "line_images/071_151_003__r1__r100__r002_l001_g002107.png"
+      },
+      {
+        "page_id": "071_164_002",
+        "crop_relative_path": "line_images/071_164_002__r3__r126__r001_l011_g002434.png"
+      },
+      {
+        "page_id": "071_169_002",
+        "crop_relative_path": "line_images/071_169_002__r5__r123__r001_l003_g002636.png"
+      },
+      {
+        "page_id": "071_180_004",
+        "crop_relative_path": "line_images/071_180_004__r4__r109__r001_l015_g002732.png"
+      },
+      {
+        "page_id": "071_182_002",
+        "crop_relative_path": "line_images/071_182_002__r4__r103__r002_l011_g002880.png"
+      },
+      {
+        "page_id": "071_201_001",
+        "crop_relative_path": "line_images/071_201_001__r4__r122__r001_l004_g003308.png"
+      },
+      {
+        "page_id": "072_050_003",
+        "crop_relative_path": "line_images/072_050_003__r2__r207__r001_l009_g003647.png"
+      },
+      {
+        "page_id": "072_051_003",
+        "crop_relative_path": "line_images/072_051_003__r5__r203__r001_l009_g003702.png"
+      },
+      {
+        "page_id": "072_101_004",
+        "crop_relative_path": "line_images/072_101_004__r3__r118__r001_l003_g004255.png"
+      },
+      {
+        "page_id": "072_103_001",
+        "crop_relative_path": "line_images/072_103_001__r4__r112__r002_l003_g004361.png"
+      },
+      {
+        "page_id": "072_105_002",
+        "crop_relative_path": "line_images/072_105_002__r2__r104__r001_l019_g004494.png"
+      },
+      {
+        "page_id": "072_167_002",
+        "crop_relative_path": "line_images/072_167_002__r5__r120__r002_l004_g004538.png"
+      },
+      {
+        "page_id": "072_167_004",
+        "crop_relative_path": "line_images/072_167_004__r2__r22__r004_l001_g004584.png"
+      },
+      {
+        "page_id": "072_168_001",
+        "crop_relative_path": "line_images/072_168_001__r4__r115__r001_l009_g004593.png"
+      },
+      {
+        "page_id": "072_169_003",
+        "crop_relative_path": "line_images/072_169_003__r1__r106__r001_l005_g004664.png"
+      },
+      {
+        "page_id": "072_212_001",
+        "crop_relative_path": "line_images/072_212_001__r2__r30__r003_l001_g004776.png"
+      },
+      {
+        "page_id": "072_213_001",
+        "crop_relative_path": "line_images/072_213_001__r1__r105__r001_l013_g004790.png"
+      },
+      {
+        "page_id": "073_083_001",
+        "crop_relative_path": "line_images/073_083_001__r3__r35__r001_l002_g005635.png"
+      },
+      {
+        "page_id": "096_003_002",
+        "crop_relative_path": "line_images/096_003_002__r1__r125__r001_l002_g005696.png"
+      },
+      {
+        "page_id": "115_009_001",
+        "crop_relative_path": "line_images/115_009_001__r3__r237__r001_l007_g006564.png"
+      },
+      {
+        "page_id": "115_012_001",
+        "crop_relative_path": "line_images/115_012_001__r1__r294__r001_l032_g006834.png"
+      },
+      {
+        "page_id": "115_072_001",
+        "crop_relative_path": "line_images/115_072_001__r2__r125__r001_l006_g007222.png"
+      },
+      {
+        "page_id": "115_078_001",
+        "crop_relative_path": "line_images/115_078_001__r2__r115__r001_l015_g007647.png"
+      },
+      {
+        "page_id": "115_081_001",
+        "crop_relative_path": "line_images/115_081_001__r4__r35__r001_l009_g007859.png"
+      },
+      {
+        "page_id": "115_083_001",
+        "crop_relative_path": "line_images/115_083_001__r1__r120__r001_l007_g008009.png"
+      },
+      {
+        "page_id": "115_084_003",
+        "crop_relative_path": "line_images/115_084_003__r2__r133__r001_l001_g008124.png"
+      },
+      {
+        "page_id": "115_101_002",
+        "crop_relative_path": "line_images/115_101_002__r1__r116__r001_l012_g008528.png"
+      },
+      {
+        "page_id": "115_107_002",
+        "crop_relative_path": "line_images/115_107_002__r1__r111__r001_l016_g008681.png"
+      },
+      {
+        "page_id": "116_055_001",
+        "crop_relative_path": "line_images/116_055_001__r1__r117__r001_l022_g009135.png"
+      },
+      {
+        "page_id": "116_100_001",
+        "crop_relative_path": "line_images/116_100_001__r5__r106__r001_l032_g009598.png"
+      },
+      {
+        "page_id": "116_136_001",
+        "crop_relative_path": "line_images/116_136_001__r1__r111__r001_l014_g009725.png"
+      },
+      {
+        "page_id": "116_287_001",
+        "crop_relative_path": "line_images/116_287_001__r1__r113__r001_l018_g009929.png"
+      },
+      {
+        "page_id": "116_294_001",
+        "crop_relative_path": "line_images/116_294_001__r1__r34__r001_l014_g010127.png"
+      },
+      {
+        "page_id": "116_620_001",
+        "crop_relative_path": "line_images/116_620_001__r1__r105__r001_l023_g010778.png"
+      },
+      {
+        "page_id": "116_626_002",
+        "crop_relative_path": "line_images/116_626_002__r2__r119__r001_l013_g010839.png"
+      },
+      {
+        "page_id": "116_636_002",
+        "crop_relative_path": "line_images/116_636_002__r2__r116__r001_l022_g011149.png"
+      }
+    ],
+    "reference_length_bins": {
+      "51+": 24,
+      "11-25": 1,
+      "26-50": 12,
+      "1-10": 6
+    },
+    "processor": {
+      "_processor_class": null,
+      "image_processor_type": "ViTImageProcessor",
+      "do_resize": true,
+      "do_rescale": true,
+      "do_normalize": true,
+      "size": {
+        "height": 384,
+        "width": 384
+      },
+      "resample": 2,
+      "rescale_factor": 0.00392156862745098,
+      "image_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "do_convert_rgb": null
+    },
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "4.57.6",
+      "Pillow": "12.3.0",
+      "numpy": "2.5.4",
+      "opencv-python-headless": "4.14.0.94"
+    },
+    "started_at_utc": "2026-11-16T15:40:04.991919+00:00",
+    "available_ram_gib_before_model_load": 3.1335487365722656,
+    "available_ram_gib_after_model_load": 3.0358428955078125
+  },
+  "runtime_seconds": 110.37932749999891,
+  "comparison_to_saved_original": {
+    "cer_delta_percentage_points": -1.0272213662044172,
+    "wer_delta_percentage_points": -2.777777777777779,
+    "exact_match_delta_percentage_points": 0.0,
+    "lines_fewer_character_errors": 9,
+    "lines_more_character_errors": 7,
+    "lines_equal_character_errors": 27
+  },
+  "finished_at_utc": "2026-11-16T15:46:56.457607+00:00",
+  "predictions_sha256": "3dc65e310ebe9a5c742d87862d0d034dbff88cb6718e5d3a47910303f2456b08"
+}

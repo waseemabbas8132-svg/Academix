@@ -1,0 +1,22 @@
+{
+  "ai_engine": {
+    "passed": 133,
+    "seconds": 6.24,
+    "command": "..\\.venv\\Scripts\\python.exe -B -m pytest tests -q -p no:cacheprovider --basetemp=../build/final_ai_quality_04 --tb=short",
+    "cwd": "ai-engine"
+  },
+  "backend": {
+    "passed": 50,
+    "seconds": 3.45,
+    "warnings": 1,
+    "command": "Root Python -B stdin wrapper sets DATABASE_URL=sqlite:// and scratch UPLOAD_STORAGE_PATH before pytest.main([tests,-q,-p,no:cacheprovider,--basetemp=../build/final_ai_backend_05,--tb=short])",
+    "cwd": "backend"
+  },
+  "flutter": {
+    "passed": 17,
+    "runner_seconds": 3,
+    "command": "C:\\flutter\\flutter\\bin\\cache\\dart-sdk\\bin\\dart.exe --packages=C:\\flutter\\flutter\\packages\\flutter_tools\\.dart_tool\\package_config.json C:\\flutter\\flutter\\bin\\cache\\flutter_tools.snapshot test --no-pub test",
+    "cwd": "."
+  },
+  "total_passed": 200
+}

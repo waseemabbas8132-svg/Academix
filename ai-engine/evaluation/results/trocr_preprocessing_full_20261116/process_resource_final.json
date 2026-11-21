@@ -1,0 +1,10 @@
+{
+  "process_id": 2828,
+  "kernel_cpu_seconds": 1272.9375,
+  "user_cpu_seconds": 13428.109375,
+  "total_cpu_seconds": 14701.046875,
+  "process_created_at_utc": "2026-11-16T16:04:23.417126+00:00",
+  "process_exited_at_utc": "2026-11-17T02:11:33.516947+00:00",
+  "process_lifetime_wall_seconds": 36430.0998210907,
+  "note": "CPU seconds sum work across threads; not directly comparable to elapsed wall seconds. Read-only Windows process counters."
+}

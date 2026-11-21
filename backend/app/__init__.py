@@ -1,0 +1,1 @@
+"""Academix backend application."""

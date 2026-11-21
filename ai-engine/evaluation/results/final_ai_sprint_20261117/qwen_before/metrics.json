@@ -1,0 +1,67 @@
+{
+  "total_cases": 11,
+  "cases_calling_model": 10,
+  "scored_cases": 3,
+  "abstained_cases": 0,
+  "failed_cases": 8,
+  "invalid_or_failed_assessment_rate_over_model_calls": 0.8,
+  "mechanical_mark_bound_violations": 0,
+  "human_verified_samples": 0,
+  "mean_absolute_mark_error": null,
+  "exact_mark_agreement": null,
+  "partial_credit_agreement": null,
+  "feedback_relevance": null,
+  "semantic_rubric_compliance": null,
+  "limitations": "No human-verified marks or feedback judgements. Contract validity/bounds are not semantic accuracy. Cases are synthetic tests, not a new dataset.",
+  "configuration": {
+    "phase": "before",
+    "model": {
+      "name": "qwen2.5:3b",
+      "model": "qwen2.5:3b",
+      "modified_at": "2026-11-15T21:27:24.7796259+05:00",
+      "size": 1929912432,
+      "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "3.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 32768,
+        "embedding_length": 2048,
+        "runner": "ggml"
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    "ollama_version": {
+      "version": "0.40.16"
+    },
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_thread": 4,
+      "num_gpu": 0,
+      "num_ctx": 8192,
+      "num_predict": 512
+    },
+    "device_policy": "CPU forced with num_gpu=0",
+    "started_at_utc": "2026-11-17T02:48:54.892410+00:00",
+    "human_labels": "none",
+    "case_source": "synthetic functional test scenarios; no accuracy labels",
+    "prompt_policy": "frozen baseline",
+    "versions": {
+      "httpx": "0.28.1",
+      "Pillow": "12.3.0"
+    },
+    "source_sha256": "80c62b4a42d995e7aa8e0c6d9eebf39eeb96230991ee295b427a9419454f9543"
+  },
+  "runtime_seconds": 183.66967060000752,
+  "finished_at_utc": "2026-11-17T02:51:58.642317+00:00",
+  "predictions_sha256": "17d74c9de2ed9bffdbc707894eca870b8af0df6132b4220ce9cde411c5399fd2"
+}

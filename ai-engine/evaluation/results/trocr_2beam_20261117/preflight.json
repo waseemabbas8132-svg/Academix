@@ -1,0 +1,17 @@
+{
+  "status": "blocked_before_model_load",
+  "captured_at_local": "2026-11-17T19:08:46+05:00",
+  "model_loaded": false,
+  "inference_started": false,
+  "memory_safety_threshold_gib": 2.5,
+  "physical_ram_gib": 15.688,
+  "available_ram_checks_gib": [
+    2.52,
+    2.845,
+    1.904
+  ],
+  "final_pre_run_available_ram_gib": 1.904,
+  "python_processes_at_final_check": 0,
+  "python_processes_terminated": 0,
+  "reason": "Available RAM fell below the existing 2.5 GiB guard at the final pre-run check."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "NOT_AVAILABLE",
+  "human_verified_examples_found": 0,
+  "mae": null,
+  "exact_agreement": null,
+  "partial_credit_agreement": null,
+  "feedback_relevance": null,
+  "reason": "No human-verified marking corpus found in inspected repository or supplied during work. Synthetic case names and AI outputs are not human labels.",
+  "required_before_accuracy_claim": "Teacher-verified question, answer, authoritative rubric, marks, assessor/provenance and feedback-relevance judgements."
+}

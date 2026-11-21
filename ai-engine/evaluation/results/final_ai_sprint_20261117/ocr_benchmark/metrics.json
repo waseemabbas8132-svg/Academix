@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "original": {
+    "cer": 0.1735679078439698,
+    "wer": 0.4135741218495733,
+    "exact_match_accuracy": 0.059314954051796154,
+    "exact_matches": 71,
+    "total_evaluated_samples": 1197,
+    "successful_samples": 1197,
+    "failed_samples": 0,
+    "character_errors": 9402,
+    "reference_characters": 54169,
+    "word_errors": 4168,
+    "reference_words": 10078,
+    "failures": []
+  },
+  "enhanced": {
+    "cer": 0.16243607967656779,
+    "wer": 0.40315538797380435,
+    "exact_match_accuracy": 0.06599832915622389,
+    "exact_matches": 79,
+    "total_evaluated_samples": 1197,
+    "successful_samples": 1197,
+    "failed_samples": 0,
+    "character_errors": 8799,
+    "reference_characters": 54169,
+    "word_errors": 4063,
+    "reference_words": 10078,
+    "failures": []
+  },
+  "lines_improved": 415,
+  "lines_regressed": 280,
+  "lines_tied": 502,
+  "validation_crops_decoded_and_hash_verified": 1197,
+  "current_uniform_contrast_flags": 0,
+  "ocr_confidence_available_in_saved_predictions": false,
+  "quality_gate_accuracy_effect": "NOT MEASURED: saved predictions have no confidence; no fabricated replay of uncertainty gating",
+  "sources_sha256": {
+    "C:\\Users\\SUNNY.COMPUTERS\\academix\\ai-engine\\evaluation\\results\\bentham_trocr_validation_predictions.jsonl": "7dd1b4f6520fb4f14e2b4c7465b9f01c7358e453a1d4a25e2b3aae170ee5a98a",
+    "C:\\Users\\SUNNY.COMPUTERS\\academix\\ai-engine\\evaluation\\results\\trocr_preprocessing_full_20261116\\existing_validation_predictions.jsonl": "2733b59d24d1b9f80bc8917cb124f9679721777aebac897b85f48fef143410c0",
+    "C:\\Users\\SUNNY.COMPUTERS\\academix\\ai-engine\\datasets\\manifests\\bentham\\validation.jsonl": "56aaaee040a6ea2548bc6d738568729ce5f25d82a46c2d30b52488755e3103f1"
+  },
+  "originals_unchanged": true,
+  "new_inference_performed": false,
+  "accuracy_change_this_sprint": "No new OCR transform or new accuracy gain; prior measured gain reanalysed.",
+  "reanalysis_only_runtime_seconds": 11.575080900001922,
+  "finished_at_utc": "2026-11-17T03:09:43.218040+00:00"
+}

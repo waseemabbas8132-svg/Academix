@@ -1,0 +1,207 @@
+{
+  "verified_samples": 1197,
+  "unique_pages": 43,
+  "all_raw_references_paths_and_crop_hashes_match": true,
+  "metrics_and_prediction_file_hash_recalculated": true,
+  "character_edit_operations": {
+    "original": {
+      "substitution": 6004,
+      "deletion": 963,
+      "insertion": 2435
+    },
+    "existing": {
+      "deletion": 973,
+      "substitution": 5639,
+      "insertion": 2187
+    }
+  },
+  "reference_length_metrics": {
+    "1-10": {
+      "original": {
+        "cer": 0.7327731092436974,
+        "wer": 1.0804597701149425,
+        "exact_match_accuracy": 0.16149068322981366,
+        "exact_matches": 26,
+        "total_evaluated_samples": 161,
+        "successful_samples": 161,
+        "failed_samples": 0,
+        "character_errors": 436,
+        "reference_characters": 595,
+        "word_errors": 188,
+        "reference_words": 174,
+        "failures": []
+      },
+      "existing": {
+        "cer": 0.6907563025210084,
+        "wer": 1.0344827586206897,
+        "exact_match_accuracy": 0.18012422360248448,
+        "exact_matches": 29,
+        "total_evaluated_samples": 161,
+        "successful_samples": 161,
+        "failed_samples": 0,
+        "character_errors": 411,
+        "reference_characters": 595,
+        "word_errors": 180,
+        "reference_words": 174,
+        "failures": []
+      }
+    },
+    "11-25": {
+      "original": {
+        "cer": 0.30807248764415157,
+        "wer": 0.9219512195121952,
+        "exact_match_accuracy": 0.0410958904109589,
+        "exact_matches": 3,
+        "total_evaluated_samples": 73,
+        "successful_samples": 73,
+        "failed_samples": 0,
+        "character_errors": 374,
+        "reference_characters": 1214,
+        "word_errors": 189,
+        "reference_words": 205,
+        "failures": []
+      },
+      "existing": {
+        "cer": 0.2726523887973641,
+        "wer": 0.8975609756097561,
+        "exact_match_accuracy": 0.0547945205479452,
+        "exact_matches": 4,
+        "total_evaluated_samples": 73,
+        "successful_samples": 73,
+        "failed_samples": 0,
+        "character_errors": 331,
+        "reference_characters": 1214,
+        "word_errors": 184,
+        "reference_words": 205,
+        "failures": []
+      }
+    },
+    "26-50": {
+      "original": {
+        "cer": 0.1618194244058015,
+        "wer": 0.3862520458265139,
+        "exact_match_accuracy": 0.06578947368421052,
+        "exact_matches": 20,
+        "total_evaluated_samples": 304,
+        "successful_samples": 304,
+        "failed_samples": 0,
+        "character_errors": 2131,
+        "reference_characters": 13169,
+        "word_errors": 944,
+        "reference_words": 2444,
+        "failures": []
+      },
+      "existing": {
+        "cer": 0.15377021793606196,
+        "wer": 0.37561374795417346,
+        "exact_match_accuracy": 0.0756578947368421,
+        "exact_matches": 23,
+        "total_evaluated_samples": 304,
+        "successful_samples": 304,
+        "failed_samples": 0,
+        "character_errors": 2025,
+        "reference_characters": 13169,
+        "word_errors": 918,
+        "reference_words": 2444,
+        "failures": []
+      }
+    },
+    "51-75": {
+      "original": {
+        "cer": 0.16433367768595042,
+        "wer": 0.39169222191246167,
+        "exact_match_accuracy": 0.033690658499234305,
+        "exact_matches": 22,
+        "total_evaluated_samples": 653,
+        "successful_samples": 653,
+        "failed_samples": 0,
+        "character_errors": 6363,
+        "reference_characters": 38720,
+        "word_errors": 2810,
+        "reference_words": 7174,
+        "failures": []
+      },
+      "existing": {
+        "cer": 0.1540547520661157,
+        "wer": 0.38346807917479786,
+        "exact_match_accuracy": 0.03522205206738132,
+        "exact_matches": 23,
+        "total_evaluated_samples": 653,
+        "successful_samples": 653,
+        "failed_samples": 0,
+        "character_errors": 5965,
+        "reference_characters": 38720,
+        "word_errors": 2751,
+        "reference_words": 7174,
+        "failures": []
+      }
+    },
+    "76+": {
+      "original": {
+        "cer": 0.208067940552017,
+        "wer": 0.4567901234567901,
+        "exact_match_accuracy": 0.0,
+        "exact_matches": 0,
+        "total_evaluated_samples": 6,
+        "successful_samples": 6,
+        "failed_samples": 0,
+        "character_errors": 98,
+        "reference_characters": 471,
+        "word_errors": 37,
+        "reference_words": 81,
+        "failures": []
+      },
+      "existing": {
+        "cer": 0.14225053078556263,
+        "wer": 0.37037037037037035,
+        "exact_match_accuracy": 0.0,
+        "exact_matches": 0,
+        "total_evaluated_samples": 6,
+        "successful_samples": 6,
+        "failed_samples": 0,
+        "character_errors": 67,
+        "reference_characters": 471,
+        "word_errors": 30,
+        "reference_words": 81,
+        "failures": []
+      }
+    }
+  },
+  "paired_page_bootstrap": {
+    "seed": 42,
+    "replicates": 5000,
+    "method": "Sample 43 page IDs with replacement, sum corpus error/ref and exact/sample counts; candidate minus original, percentage points. Exploratory after validation selection; not an independent test.",
+    "intervals": {
+      "cer": {
+        "p2_5": -1.4955818906779461,
+        "median": -1.10990039566463,
+        "p97_5": -0.7338970296367897
+      },
+      "wer": {
+        "p2_5": -1.604020932154211,
+        "median": -1.04832329522254,
+        "p97_5": -0.43146290907230533
+      },
+      "exact_match": {
+        "p2_5": -0.3314070355210965,
+        "median": 0.6683375104427736,
+        "p97_5": 1.6379663651780663
+      }
+    }
+  },
+  "runtime_seconds": {
+    "median_per_crop": 3.018978699998115,
+    "p95_per_crop": 4.878374400004395,
+    "max_per_crop": 21473.738790499992,
+    "rows_over_60_seconds": [
+      {
+        "crop_relative_path": "line_images/071_105_003__r2__r139__r001_l010_g001229.png",
+        "runtime_seconds": 21473.738790499992
+      },
+      {
+        "crop_relative_path": "line_images/071_105_003__r2__r127__r001_l011_g001230.png",
+        "runtime_seconds": 10970.156145400004
+      }
+    ]
+  }
+}

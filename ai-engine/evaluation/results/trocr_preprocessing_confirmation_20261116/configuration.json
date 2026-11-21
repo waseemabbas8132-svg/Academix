@@ -1,0 +1,421 @@
+{
+  "model_name": "microsoft/trocr-base-handwritten",
+  "checkpoint_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+  "local_files_only": true,
+  "split": "validation",
+  "phase": "confirmation",
+  "seed": 42,
+  "threads": 4,
+  "device": "cpu",
+  "batch_size": 1,
+  "dtype": "torch.float32",
+  "generation": {
+    "max_new_tokens": 192,
+    "do_sample": false,
+    "num_beams": 1,
+    "use_cache": true
+  },
+  "normalization": {
+    "unicode": "NFC",
+    "whitespace": "collapse Unicode whitespace to one ASCII space and trim",
+    "case": "preserved",
+    "punctuation": "preserved",
+    "accents": "preserved",
+    "cer_units": "Unicode code points including normalized spaces",
+    "wer_units": "whitespace-delimited words",
+    "aggregation": "corpus edit distance / total reference units; denominator at least 1",
+    "failures": "empty prediction for CER/WER; incorrect for exact match; all samples included"
+  },
+  "variants": {
+    "existing": "Existing page preprocessing: median3, autocontrast cutoff1, contrast1.15, max2400"
+  },
+  "manifest_sha256": "56aaaee040a6ea2548bc6d738568729ce5f25d82a46c2d30b52488755e3103f1",
+  "baseline_predictions_sha256": "7dd1b4f6520fb4f14e2b4c7465b9f01c7358e453a1d4a25e2b3aae170ee5a98a",
+  "selection": "seeded per-page shuffle; screen first, confirmation next two; full all",
+  "selected_samples": [
+    {
+      "page_id": "071_018_003",
+      "crop_relative_path": "line_images/071_018_003__r4__r121__r001_l007_g000565.png"
+    },
+    {
+      "page_id": "071_018_003",
+      "crop_relative_path": "line_images/071_018_003__r4__r115__r001_l013_g000571.png"
+    },
+    {
+      "page_id": "071_021_002",
+      "crop_relative_path": "line_images/071_021_002__r2__r266__r001_l001_g000587.png"
+    },
+    {
+      "page_id": "071_021_002",
+      "crop_relative_path": "line_images/071_021_002__r2__r64__r001_l019_g000605.png"
+    },
+    {
+      "page_id": "071_044_003",
+      "crop_relative_path": "line_images/071_044_003__r4__r120__r001_l011_g000893.png"
+    },
+    {
+      "page_id": "071_044_003",
+      "crop_relative_path": "line_images/071_044_003__r4__r118__r001_l013_g000895.png"
+    },
+    {
+      "page_id": "071_059_003",
+      "crop_relative_path": "line_images/071_059_003__r4__r49__r001_l001_g001001.png"
+    },
+    {
+      "page_id": "071_059_003",
+      "crop_relative_path": "line_images/071_059_003__r4__r105__r001_l018_g001018.png"
+    },
+    {
+      "page_id": "071_105_003",
+      "crop_relative_path": "line_images/071_105_003__r2__r42__r001_l018_g001237.png"
+    },
+    {
+      "page_id": "071_105_003",
+      "crop_relative_path": "line_images/071_105_003__r5__r11__r003_l001_g001241.png"
+    },
+    {
+      "page_id": "071_106_002",
+      "crop_relative_path": "line_images/071_106_002__r3__r189__r001_l006_g001273.png"
+    },
+    {
+      "page_id": "071_106_002",
+      "crop_relative_path": "line_images/071_106_002__r3__r163__r001_l008_g001275.png"
+    },
+    {
+      "page_id": "071_120_002",
+      "crop_relative_path": "line_images/071_120_002__r5__r105__r002_l015_g001571.png"
+    },
+    {
+      "page_id": "071_120_002",
+      "crop_relative_path": "line_images/071_120_002__r3__r103__r004_l001_g001573.png"
+    },
+    {
+      "page_id": "071_151_003",
+      "crop_relative_path": "line_images/071_151_003__r3__r117__r001_l007_g002090.png"
+    },
+    {
+      "page_id": "071_151_003",
+      "crop_relative_path": "line_images/071_151_003__r4__r124__r003_l001_g002108.png"
+    },
+    {
+      "page_id": "071_164_002",
+      "crop_relative_path": "line_images/071_164_002__r3__r139__r001_l009_g002432.png"
+    },
+    {
+      "page_id": "071_164_002",
+      "crop_relative_path": "line_images/071_164_002__r3__r17__r001_l020_g002443.png"
+    },
+    {
+      "page_id": "071_169_002",
+      "crop_relative_path": "line_images/071_169_002__r5__r116__r001_l010_g002643.png"
+    },
+    {
+      "page_id": "071_169_002",
+      "crop_relative_path": "line_images/071_169_002__r3__r102__r003_l001_g002658.png"
+    },
+    {
+      "page_id": "071_180_004",
+      "crop_relative_path": "line_images/071_180_004__r4__r112__r001_l012_g002729.png"
+    },
+    {
+      "page_id": "071_180_004",
+      "crop_relative_path": "line_images/071_180_004__r3__r102__r002_l001_g002739.png"
+    },
+    {
+      "page_id": "071_182_002",
+      "crop_relative_path": "line_images/071_182_002__r5__r41__r001_l010_g002869.png"
+    },
+    {
+      "page_id": "071_182_002",
+      "crop_relative_path": "line_images/071_182_002__r4__r35__r002_l004_g002873.png"
+    },
+    {
+      "page_id": "071_201_001",
+      "crop_relative_path": "line_images/071_201_001__r4__r114__r001_l012_g003316.png"
+    },
+    {
+      "page_id": "071_201_001",
+      "crop_relative_path": "line_images/071_201_001__r4__r111__r001_l015_g003319.png"
+    },
+    {
+      "page_id": "072_050_003",
+      "crop_relative_path": "line_images/072_050_003__r2__r268__r001_l003_g003641.png"
+    },
+    {
+      "page_id": "072_050_003",
+      "crop_relative_path": "line_images/072_050_003__r4__r7__r004_l001_g003664.png"
+    },
+    {
+      "page_id": "072_051_003",
+      "crop_relative_path": "line_images/072_051_003__r5__r280__r001_l003_g003696.png"
+    },
+    {
+      "page_id": "072_051_003",
+      "crop_relative_path": "line_images/072_051_003__r5__r29__r001_l029_g003722.png"
+    },
+    {
+      "page_id": "072_101_004",
+      "crop_relative_path": "line_images/072_101_004__r3__r120__r001_l001_g004253.png"
+    },
+    {
+      "page_id": "072_101_004",
+      "crop_relative_path": "line_images/072_101_004__r3__r106__r001_l015_g004267.png"
+    },
+    {
+      "page_id": "072_103_001",
+      "crop_relative_path": "line_images/072_103_001__r5__r121__r001_l005_g004352.png"
+    },
+    {
+      "page_id": "072_103_001",
+      "crop_relative_path": "line_images/072_103_001__r4__r107__r002_l008_g004366.png"
+    },
+    {
+      "page_id": "072_105_002",
+      "crop_relative_path": "line_images/072_105_002__r2__r115__r001_l008_g004483.png"
+    },
+    {
+      "page_id": "072_105_002",
+      "crop_relative_path": "line_images/072_105_002__r2__r109__r001_l014_g004489.png"
+    },
+    {
+      "page_id": "072_167_002",
+      "crop_relative_path": "line_images/072_167_002__r5__r119__r002_l005_g004539.png"
+    },
+    {
+      "page_id": "072_167_002",
+      "crop_relative_path": "line_images/072_167_002__r4__r117__r003_l001_g004542.png"
+    },
+    {
+      "page_id": "072_167_004",
+      "crop_relative_path": "line_images/072_167_004__r1__r105__r001_l009_g004576.png"
+    },
+    {
+      "page_id": "072_167_004",
+      "crop_relative_path": "line_images/072_167_004__r1__r101__r001_l013_g004580.png"
+    },
+    {
+      "page_id": "072_168_001",
+      "crop_relative_path": "line_images/072_168_001__r4__r105__r001_l019_g004603.png"
+    },
+    {
+      "page_id": "072_168_001",
+      "crop_relative_path": "line_images/072_168_001__r2__r101__r003_l001_g004609.png"
+    },
+    {
+      "page_id": "072_169_003",
+      "crop_relative_path": "line_images/072_169_003__r1__r102__r001_l009_g004668.png"
+    },
+    {
+      "page_id": "072_169_003",
+      "crop_relative_path": "line_images/072_169_003__r1__r100__r001_l012_g004671.png"
+    },
+    {
+      "page_id": "072_212_001",
+      "crop_relative_path": "line_images/072_212_001__r4__r117__r001_l009_g004761.png"
+    },
+    {
+      "page_id": "072_212_001",
+      "crop_relative_path": "line_images/072_212_001__r4__r33__r001_l021_g004773.png"
+    },
+    {
+      "page_id": "072_213_001",
+      "crop_relative_path": "line_images/072_213_001__r1__r117__r001_l001_g004778.png"
+    },
+    {
+      "page_id": "072_213_001",
+      "crop_relative_path": "line_images/072_213_001__r1__r111__r001_l007_g004784.png"
+    },
+    {
+      "page_id": "073_083_001",
+      "crop_relative_path": "line_images/073_083_001__r3__r115__r001_l010_g005643.png"
+    },
+    {
+      "page_id": "073_083_001",
+      "crop_relative_path": "line_images/073_083_001__r2__r101__r002_l001_g005656.png"
+    },
+    {
+      "page_id": "096_003_002",
+      "crop_relative_path": "line_images/096_003_002__r1__r114__r001_l013_g005707.png"
+    },
+    {
+      "page_id": "096_003_002",
+      "crop_relative_path": "line_images/096_003_002__r1__r101__r001_l027_g005721.png"
+    },
+    {
+      "page_id": "115_009_001",
+      "crop_relative_path": "line_images/115_009_001__r3__r242__r001_l002_g006559.png"
+    },
+    {
+      "page_id": "115_009_001",
+      "crop_relative_path": "line_images/115_009_001__r3__r218__r001_l026_g006583.png"
+    },
+    {
+      "page_id": "115_012_001",
+      "crop_relative_path": "line_images/115_012_001__r1__r355__r001_l003_g006805.png"
+    },
+    {
+      "page_id": "115_012_001",
+      "crop_relative_path": "line_images/115_012_001__r1__r308__r001_l017_g006819.png"
+    },
+    {
+      "page_id": "115_072_001",
+      "crop_relative_path": "line_images/115_072_001__r2__r112__r001_l020_g007236.png"
+    },
+    {
+      "page_id": "115_072_001",
+      "crop_relative_path": "line_images/115_072_001__r2__r102__r001_l030_g007246.png"
+    },
+    {
+      "page_id": "115_078_001",
+      "crop_relative_path": "line_images/115_078_001__r2__r129__r001_l001_g007633.png"
+    },
+    {
+      "page_id": "115_078_001",
+      "crop_relative_path": "line_images/115_078_001__r2__r109__r001_l021_g007653.png"
+    },
+    {
+      "page_id": "115_081_001",
+      "crop_relative_path": "line_images/115_081_001__r4__r119__r001_l008_g007858.png"
+    },
+    {
+      "page_id": "115_081_001",
+      "crop_relative_path": "line_images/115_081_001__r1__r128__r002_l001_g007877.png"
+    },
+    {
+      "page_id": "115_083_001",
+      "crop_relative_path": "line_images/115_083_001__r1__r126__r001_l001_g008003.png"
+    },
+    {
+      "page_id": "115_083_001",
+      "crop_relative_path": "line_images/115_083_001__r1__r108__r001_l020_g008022.png"
+    },
+    {
+      "page_id": "115_084_003",
+      "crop_relative_path": "line_images/115_084_003__r2__r124__r001_l010_g008133.png"
+    },
+    {
+      "page_id": "115_084_003",
+      "crop_relative_path": "line_images/115_084_003__r2__r119__r001_l015_g008138.png"
+    },
+    {
+      "page_id": "115_101_002",
+      "crop_relative_path": "line_images/115_101_002__r1__r126__r001_l002_g008518.png"
+    },
+    {
+      "page_id": "115_101_002",
+      "crop_relative_path": "line_images/115_101_002__r1__r105__r001_l024_g008540.png"
+    },
+    {
+      "page_id": "115_107_002",
+      "crop_relative_path": "line_images/115_107_002__r1__r124__r001_l003_g008668.png"
+    },
+    {
+      "page_id": "115_107_002",
+      "crop_relative_path": "line_images/115_107_002__r1__r108__r001_l019_g008684.png"
+    },
+    {
+      "page_id": "116_055_001",
+      "crop_relative_path": "line_images/116_055_001__r1__r130__r001_l009_g009122.png"
+    },
+    {
+      "page_id": "116_055_001",
+      "crop_relative_path": "line_images/116_055_001__r1__r118__r001_l021_g009134.png"
+    },
+    {
+      "page_id": "116_100_001",
+      "crop_relative_path": "line_images/116_100_001__r5__r115__r001_l023_g009589.png"
+    },
+    {
+      "page_id": "116_100_001",
+      "crop_relative_path": "line_images/116_100_001__r5__r109__r001_l029_g009595.png"
+    },
+    {
+      "page_id": "116_136_001",
+      "crop_relative_path": "line_images/116_136_001__r1__r117__r001_l008_g009719.png"
+    },
+    {
+      "page_id": "116_136_001",
+      "crop_relative_path": "line_images/116_136_001__r1__r104__r001_l021_g009732.png"
+    },
+    {
+      "page_id": "116_287_001",
+      "crop_relative_path": "line_images/116_287_001__r1__r123__r001_l008_g009919.png"
+    },
+    {
+      "page_id": "116_287_001",
+      "crop_relative_path": "line_images/116_287_001__r1__r105__r001_l026_g009937.png"
+    },
+    {
+      "page_id": "116_294_001",
+      "crop_relative_path": "line_images/116_294_001__r1__r112__r001_l019_g010132.png"
+    },
+    {
+      "page_id": "116_294_001",
+      "crop_relative_path": "line_images/116_294_001__r1__r105__r001_l026_g010139.png"
+    },
+    {
+      "page_id": "116_620_001",
+      "crop_relative_path": "line_images/116_620_001__r1__r107__r001_l021_g010776.png"
+    },
+    {
+      "page_id": "116_620_001",
+      "crop_relative_path": "line_images/116_620_001__r1__r101__r001_l027_g010782.png"
+    },
+    {
+      "page_id": "116_626_002",
+      "crop_relative_path": "line_images/116_626_002__r2__r115__r001_l017_g010843.png"
+    },
+    {
+      "page_id": "116_626_002",
+      "crop_relative_path": "line_images/116_626_002__r2__r108__r001_l024_g010850.png"
+    },
+    {
+      "page_id": "116_636_002",
+      "crop_relative_path": "line_images/116_636_002__r2__r130__r001_l005_g011132.png"
+    },
+    {
+      "page_id": "116_636_002",
+      "crop_relative_path": "line_images/116_636_002__r2__r107__r001_l031_g011158.png"
+    }
+  ],
+  "reference_length_bins": {
+    "51+": 42,
+    "26-50": 27,
+    "1-10": 13,
+    "11-25": 4
+  },
+  "processor": {
+    "_processor_class": null,
+    "image_processor_type": "ViTImageProcessor",
+    "do_resize": true,
+    "do_rescale": true,
+    "do_normalize": true,
+    "size": {
+      "height": 384,
+      "width": 384
+    },
+    "resample": 2,
+    "rescale_factor": 0.00392156862745098,
+    "image_mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "image_std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "do_convert_rgb": null
+  },
+  "versions": {
+    "torch": "2.15.0+cpu",
+    "transformers": "4.57.6",
+    "Pillow": "12.3.0",
+    "numpy": "2.5.4",
+    "opencv-python-headless": "4.14.0.94"
+  },
+  "started_at_utc": "2026-11-16T15:59:07.959733+00:00",
+  "available_ram_gib_before_model_load": 3.722675323486328,
+  "available_ram_gib_after_model_load": 3.392986297607422
+}

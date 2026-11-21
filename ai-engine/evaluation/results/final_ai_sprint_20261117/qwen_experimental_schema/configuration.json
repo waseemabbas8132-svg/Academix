@@ -1,0 +1,48 @@
+{
+  "phase": "experimental_schema",
+  "model": {
+    "name": "qwen2.5:3b",
+    "model": "qwen2.5:3b",
+    "modified_at": "2026-11-15T21:27:24.7796259+05:00",
+    "size": 1929912432,
+    "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen2",
+      "families": [
+        "qwen2"
+      ],
+      "parameter_size": "3.1B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 32768,
+      "embedding_length": 2048,
+      "runner": "ggml"
+    },
+    "capabilities": [
+      "completion",
+      "tools"
+    ]
+  },
+  "ollama_version": {
+    "version": "0.40.16"
+  },
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_thread": 4,
+    "num_gpu": 0,
+    "num_ctx": 8192,
+    "num_predict": 512
+  },
+  "device_policy": "CPU forced with num_gpu=0",
+  "started_at_utc": "2026-11-17T03:09:22.276489+00:00",
+  "human_labels": "none",
+  "case_source": "synthetic functional test scenarios; no accuracy labels",
+  "prompt_policy": "experimental_schema",
+  "versions": {
+    "httpx": "0.28.1",
+    "Pillow": "12.3.0"
+  },
+  "source_sha256": "c66a39b2ac20c9404ad9b83051b87db22c86fc3bb30ef7dd314b0b2898b5b760"
+}

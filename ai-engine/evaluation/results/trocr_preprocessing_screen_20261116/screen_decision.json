@@ -1,0 +1,59 @@
+{
+  "criteria": {
+    "screen_gate": "CER reduction >=0.5 percentage points, WER non-increasing, exact matches non-decreasing, zero failures",
+    "confirmation_gate": "On disjoint next-two-lines/page: CER reduction >=0.25 percentage points, WER non-increasing, zero failures",
+    "full_gate": "Run only for a candidate passing both gates; accept no production change based only on subset evidence",
+    "test_split": "Never read or evaluated"
+  },
+  "candidates": {
+    "existing": {
+      "passes_screen": true,
+      "cer": 0.1510015408320493,
+      "wer": 0.37777777777777777,
+      "exact_matches": 1
+    },
+    "contrast": {
+      "passes_screen": true,
+      "cer": 0.16743708269132,
+      "wer": 0.3888888888888889,
+      "exact_matches": 1
+    },
+    "clahe": {
+      "passes_screen": false,
+      "cer": 0.1689779147406266,
+      "wer": 0.3972222222222222,
+      "exact_matches": 0
+    },
+    "denoise": {
+      "passes_screen": true,
+      "cer": 0.17051874678993323,
+      "wer": 0.39444444444444443,
+      "exact_matches": 1
+    },
+    "deskew": {
+      "passes_screen": false,
+      "cer": 0.17411402157164868,
+      "wer": 0.39166666666666666,
+      "exact_matches": 0
+    },
+    "threshold": {
+      "passes_screen": false,
+      "cer": 0.33538777606574216,
+      "wer": 0.55,
+      "exact_matches": 1
+    },
+    "aspect": {
+      "passes_screen": false,
+      "cer": 0.8479712378017463,
+      "wer": 1.0583333333333333,
+      "exact_matches": 1
+    },
+    "margin": {
+      "passes_screen": false,
+      "cer": 0.17976373908577298,
+      "wer": 0.41944444444444445,
+      "exact_matches": 1
+    }
+  },
+  "selected_for_confirmation": "existing"
+}

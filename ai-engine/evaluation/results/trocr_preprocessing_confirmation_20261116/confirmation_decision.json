@@ -1,0 +1,7 @@
+{
+  "passes_confirmation_gate": true,
+  "cer_reduction_percentage_points": 0.7955449482895782,
+  "wer_reduction_percentage_points": 2.1156558533145295,
+  "full_validation_justified": true,
+  "policy": "CER reduction >=0.25pp, WER non-increasing, zero failures; candidate selected by screen only"
+}

@@ -1,0 +1,108 @@
+{
+  "samples": 1197,
+  "all_channels_identical": 0,
+  "exif_orientation_present": 0,
+  "dark_outer_edges": 0,
+  "no_pixels_below_160": 4,
+  "height_below_48": 7,
+  "quantiles": {
+    "width": {
+      "min": 37.0,
+      "q25": 1363.0,
+      "q50": 1691.0,
+      "q75": 1744.0,
+      "q95": 1855.2,
+      "max": 1993.0
+    },
+    "height": {
+      "min": 32.0,
+      "q25": 102.0,
+      "q50": 120.0,
+      "q75": 140.0,
+      "q95": 172.0,
+      "max": 326.0
+    },
+    "aspect_ratio": {
+      "min": 0.5555555555555556,
+      "q25": 9.503703703703703,
+      "q50": 12.7,
+      "q75": 14.791304347826086,
+      "q95": 17.754901960784316,
+      "max": 25.295774647887324
+    },
+    "laplacian_variance": {
+      "min": 69.60473584905661,
+      "q25": 169.73863337167248,
+      "q50": 254.8008097165992,
+      "q75": 355.7447863345088,
+      "q95": 556.3012577657647,
+      "max": 1793.4376835071378
+    },
+    "dark_pixel_fraction": {
+      "min": 0.0,
+      "q25": 0.02833875930165999,
+      "q50": 0.040146221532091096,
+      "q75": 0.055718978561699495,
+      "q95": 0.09025081658457901,
+      "max": 0.5019742836893794
+    }
+  },
+  "sharpness_association_not_causal": {
+    "quartile_1": {
+      "cer": 0.17702738990332975,
+      "wer": 0.3916282369634622,
+      "exact_match_accuracy": 0.05351170568561873,
+      "exact_matches": 16,
+      "total_evaluated_samples": 299,
+      "successful_samples": 299,
+      "failed_samples": 0,
+      "character_errors": 2637,
+      "reference_characters": 14896,
+      "word_errors": 1104,
+      "reference_words": 2819,
+      "failures": []
+    },
+    "quartile_2": {
+      "cer": 0.177013647310677,
+      "wer": 0.4363103953147877,
+      "exact_match_accuracy": 0.04013377926421405,
+      "exact_matches": 12,
+      "total_evaluated_samples": 299,
+      "successful_samples": 299,
+      "failed_samples": 0,
+      "character_errors": 2646,
+      "reference_characters": 14948,
+      "word_errors": 1192,
+      "reference_words": 2732,
+      "failures": []
+    },
+    "quartile_3": {
+      "cer": 0.17004392801473714,
+      "wer": 0.4057971014492754,
+      "exact_match_accuracy": 0.046822742474916385,
+      "exact_matches": 14,
+      "total_evaluated_samples": 299,
+      "successful_samples": 299,
+      "failed_samples": 0,
+      "character_errors": 2400,
+      "reference_characters": 14114,
+      "word_errors": 1064,
+      "reference_words": 2622,
+      "failures": []
+    },
+    "quartile_4": {
+      "cer": 0.1690925075705773,
+      "wer": 0.4241469816272966,
+      "exact_match_accuracy": 0.09666666666666666,
+      "exact_matches": 29,
+      "total_evaluated_samples": 300,
+      "successful_samples": 300,
+      "failed_samples": 0,
+      "character_errors": 1731,
+      "reference_characters": 10237,
+      "word_errors": 808,
+      "reference_words": 1905,
+      "failures": []
+    }
+  }
+}

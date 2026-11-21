@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "cer": 0.1991802801033391,
+  "wer": 0.4575307862330281,
+  "exact_match_accuracy": 0.03853046594982079,
+  "exact_matches": 43,
+  "total_evaluated_samples": 1116,
+  "successful_samples": 1116,
+  "failed_samples": 0,
+  "character_errors": 10254,
+  "reference_characters": 51481,
+  "word_errors": 4347,
+  "reference_words": 9501,
+  "failures": [],
+  "configuration": {
+    "model_name": "microsoft/trocr-base-handwritten",
+    "checkpoint_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "local_files_only": true,
+    "split": "test",
+    "evaluation_seed": 42,
+    "split_seed": 42,
+    "device": "cpu",
+    "dtype": "torch.float32",
+    "threads": 4,
+    "batch_size": 1,
+    "deterministic_algorithms": true,
+    "generation": {
+      "max_new_tokens": 192,
+      "do_sample": false,
+      "num_beams": 1,
+      "use_cache": true
+    },
+    "normalization": {
+      "unicode": "NFC",
+      "whitespace": "collapse Unicode whitespace to one ASCII space and trim",
+      "case": "preserved",
+      "punctuation": "preserved",
+      "accents": "preserved",
+      "cer_units": "Unicode code points including normalized spaces",
+      "wer_units": "whitespace-delimited words",
+      "aggregation": "corpus edit distance / total reference units; denominator at least 1",
+      "failures": "empty prediction for CER/WER; incorrect for exact match; all samples included"
+    },
+    "image_preprocessing": "Pillow decode and RGB conversion, then cached TrOCRProcessor; no page segmentation or enhancement",
+    "manifest": "C:\\Users\\SUNNY.COMPUTERS\\academix\\ai-engine\\datasets\\manifests\\bentham\\test.jsonl",
+    "crop_root": "C:\\Users\\SUNNY.COMPUTERS\\academix\\ai-engine\\datasets\\processed\\bentham",
+    "manifest_sha256": "51ee7e555e709880b8c47ccc4a1fe5e35fc4190464e4782bc6447cc8e6aff8fb",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "4.57.6",
+      "Pillow": "12.3.0",
+      "numpy": "2.5.4"
+    },
+    "started_at_utc": "2026-11-16T10:31:23.610505+00:00",
+    "limitations": "Page-level test separation only; writer IDs unavailable. No training or validation crops evaluated. CPU float32 greedy baseline; results depend on recorded software and hardware."
+  },
+  "finished_at_utc": "2026-11-16T11:27:50.578587+00:00",
+  "runtime_seconds": 3386.9691281999985,
+  "predictions_sha256": "aa14ffe25b71801d63f96b79ea1aa6cf44c98f79960d68342faf19187381aba2"
+}

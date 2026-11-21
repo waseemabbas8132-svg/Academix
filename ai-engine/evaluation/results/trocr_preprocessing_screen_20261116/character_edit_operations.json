@@ -1,0 +1,47 @@
+{
+  "original": {
+    "substitution": 248,
+    "deletion": 31,
+    "insertion": 67
+  },
+  "existing": {
+    "insertion": 63,
+    "substitution": 194,
+    "deletion": 37
+  },
+  "contrast": {
+    "substitution": 215,
+    "deletion": 38,
+    "insertion": 73
+  },
+  "clahe": {
+    "insertion": 65,
+    "substitution": 217,
+    "deletion": 47
+  },
+  "denoise": {
+    "substitution": 231,
+    "deletion": 28,
+    "insertion": 73
+  },
+  "deskew": {
+    "substitution": 238,
+    "deletion": 30,
+    "insertion": 71
+  },
+  "threshold": {
+    "insertion": 98,
+    "substitution": 169,
+    "deletion": 386
+  },
+  "aspect": {
+    "deletion": 124,
+    "substitution": 1164,
+    "insertion": 363
+  },
+  "margin": {
+    "substitution": 247,
+    "deletion": 35,
+    "insertion": 68
+  }
+}

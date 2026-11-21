@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "cer": 0.1735679078439698,
+  "wer": 0.4135741218495733,
+  "exact_match_accuracy": 0.059314954051796154,
+  "exact_matches": 71,
+  "total_evaluated_samples": 1197,
+  "successful_samples": 1197,
+  "failed_samples": 0,
+  "character_errors": 9402,
+  "reference_characters": 54169,
+  "word_errors": 4168,
+  "reference_words": 10078,
+  "failures": [],
+  "configuration": {
+    "model_name": "microsoft/trocr-base-handwritten",
+    "checkpoint_revision": "eaacaf452b06415df8f10bb6fad3a4c11e609406",
+    "local_files_only": true,
+    "split": "validation",
+    "evaluation_seed": 42,
+    "split_seed": 42,
+    "device": "cpu",
+    "dtype": "torch.float32",
+    "threads": 4,
+    "batch_size": 1,
+    "deterministic_algorithms": true,
+    "generation": {
+      "max_new_tokens": 192,
+      "do_sample": false,
+      "num_beams": 1,
+      "use_cache": true
+    },
+    "normalization": {
+      "unicode": "NFC",
+      "whitespace": "collapse Unicode whitespace to one ASCII space and trim",
+      "case": "preserved",
+      "punctuation": "preserved",
+      "accents": "preserved",
+      "cer_units": "Unicode code points including normalized spaces",
+      "wer_units": "whitespace-delimited words",
+      "aggregation": "corpus edit distance / total reference units; denominator at least 1",
+      "failures": "empty prediction for CER/WER; incorrect for exact match; all samples included"
+    },
+    "image_preprocessing": "Pillow decode and RGB conversion, then cached TrOCRProcessor; no page segmentation or enhancement",
+    "manifest": "C:\\Users\\SUNNY.COMPUTERS\\academix\\ai-engine\\datasets\\manifests\\bentham\\validation.jsonl",
+    "crop_root": "C:\\Users\\SUNNY.COMPUTERS\\academix\\ai-engine\\datasets\\processed\\bentham",
+    "manifest_sha256": "56aaaee040a6ea2548bc6d738568729ce5f25d82a46c2d30b52488755e3103f1",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "4.57.6",
+      "Pillow": "12.3.0",
+      "numpy": "2.5.4"
+    },
+    "started_at_utc": "2026-11-16T11:33:24.797828+00:00",
+    "limitations": "Page-level validation separation only; writer IDs unavailable. Only the selected split is evaluated. CPU float32 greedy baseline; results depend on recorded software and hardware."
+  },
+  "input_integrity": {
+    "manifest_unchanged": true,
+    "crop_fingerprints_unchanged": true,
+    "readable_crops_verified": 1197,
+    "unreadable_or_missing_crops": 0
+  },
+  "finished_at_utc": "2026-11-16T12:24:34.793555+00:00",
+  "runtime_seconds": 3069.993626399999,
+  "predictions_sha256": "7dd1b4f6520fb4f14e2b4c7465b9f01c7358e453a1d4a25e2b3aae170ee5a98a"
+}

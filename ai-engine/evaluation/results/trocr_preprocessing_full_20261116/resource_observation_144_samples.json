@@ -1,0 +1,9 @@
+{
+  "observed_at_local": "2026-11-17T06:13:11+05:00",
+  "process_id": 2828,
+  "completed_samples_observed": 144,
+  "process_cpu_seconds": 1623.90625,
+  "working_set_mib_rounded": 1684,
+  "peak_working_set_mib_rounded": 1730,
+  "limitation": "Snapshot, not final totals; wall-clock gaps have unverified cause."
+}

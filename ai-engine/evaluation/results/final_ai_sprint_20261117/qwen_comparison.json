@@ -1,0 +1,288 @@
+{
+  "phases": {
+    "before": {
+      "total_cases": 11,
+      "cases_calling_model": 10,
+      "scored_cases": 3,
+      "abstained_cases": 0,
+      "failed_cases": 8,
+      "invalid_or_failed_assessment_rate_over_model_calls": 0.8,
+      "mechanical_mark_bound_violations": 0,
+      "human_verified_samples": 0,
+      "mean_absolute_mark_error": null,
+      "exact_mark_agreement": null,
+      "partial_credit_agreement": null,
+      "feedback_relevance": null,
+      "semantic_rubric_compliance": null,
+      "limitations": "No human-verified marks or feedback judgements. Contract validity/bounds are not semantic accuracy. Cases are synthetic tests, not a new dataset.",
+      "configuration": {
+        "phase": "before",
+        "model": {
+          "name": "qwen2.5:3b",
+          "model": "qwen2.5:3b",
+          "modified_at": "2026-11-15T21:27:24.7796259+05:00",
+          "size": 1929912432,
+          "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "3.1B",
+            "quantization_level": "Q4_K_M",
+            "context_length": 32768,
+            "embedding_length": 2048,
+            "runner": "ggml"
+          },
+          "capabilities": [
+            "completion",
+            "tools"
+          ]
+        },
+        "ollama_version": {
+          "version": "0.40.16"
+        },
+        "options": {
+          "temperature": 0,
+          "seed": 42,
+          "num_thread": 4,
+          "num_gpu": 0,
+          "num_ctx": 8192,
+          "num_predict": 512
+        },
+        "device_policy": "CPU forced with num_gpu=0",
+        "started_at_utc": "2026-11-17T02:48:54.892410+00:00",
+        "human_labels": "none",
+        "case_source": "synthetic functional test scenarios; no accuracy labels",
+        "prompt_policy": "frozen baseline",
+        "versions": {
+          "httpx": "0.28.1",
+          "Pillow": "12.3.0"
+        },
+        "source_sha256": "80c62b4a42d995e7aa8e0c6d9eebf39eeb96230991ee295b427a9419454f9543"
+      },
+      "runtime_seconds": 183.66967060000752,
+      "finished_at_utc": "2026-11-17T02:51:58.642317+00:00",
+      "predictions_sha256": "17d74c9de2ed9bffdbc707894eca870b8af0df6132b4220ce9cde411c5399fd2"
+    },
+    "after": {
+      "total_cases": 11,
+      "cases_calling_model": 7,
+      "scored_cases": 1,
+      "abstained_cases": 4,
+      "failed_cases": 6,
+      "invalid_or_failed_assessment_rate_over_model_calls": 0.8571428571428571,
+      "mechanical_mark_bound_violations": 0,
+      "human_verified_samples": 0,
+      "mean_absolute_mark_error": null,
+      "exact_mark_agreement": null,
+      "partial_credit_agreement": null,
+      "feedback_relevance": null,
+      "semantic_rubric_compliance": null,
+      "limitations": "No human-verified marks or feedback judgements. Contract validity/bounds are not semantic accuracy. Cases are synthetic tests, not a new dataset.",
+      "configuration": {
+        "phase": "after",
+        "model": {
+          "name": "qwen2.5:3b",
+          "model": "qwen2.5:3b",
+          "modified_at": "2026-11-15T21:27:24.7796259+05:00",
+          "size": 1929912432,
+          "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "3.1B",
+            "quantization_level": "Q4_K_M",
+            "context_length": 32768,
+            "embedding_length": 2048,
+            "runner": "ggml"
+          },
+          "capabilities": [
+            "completion",
+            "tools"
+          ]
+        },
+        "ollama_version": {
+          "version": "0.40.16"
+        },
+        "options": {
+          "temperature": 0,
+          "seed": 42,
+          "num_thread": 4,
+          "num_gpu": 0,
+          "num_ctx": 8192,
+          "num_predict": 512
+        },
+        "device_policy": "CPU forced with num_gpu=0",
+        "started_at_utc": "2026-11-17T02:56:48.287462+00:00",
+        "human_labels": "none",
+        "case_source": "synthetic functional test scenarios; no accuracy labels",
+        "prompt_policy": "after",
+        "versions": {
+          "httpx": "0.28.1",
+          "Pillow": "12.3.0"
+        },
+        "source_sha256": "74c420d8a9b1b796858995d88cf7ad0d54b49f86ca1e5f1f09ba91ff43334eae"
+      },
+      "runtime_seconds": 113.49266540000099,
+      "finished_at_utc": "2026-11-17T02:58:41.791300+00:00",
+      "predictions_sha256": "f8e17151e65e4cc911adae3671b3223a5c1d78bc6f695a87059e16d54344bacd"
+    },
+    "experimental_prompt": {
+      "total_cases": 11,
+      "cases_calling_model": 7,
+      "scored_cases": 0,
+      "abstained_cases": 4,
+      "failed_cases": 7,
+      "invalid_or_failed_assessment_rate_over_model_calls": 1.0,
+      "mechanical_mark_bound_violations": 0,
+      "human_verified_samples": 0,
+      "mean_absolute_mark_error": null,
+      "exact_mark_agreement": null,
+      "partial_credit_agreement": null,
+      "feedback_relevance": null,
+      "semantic_rubric_compliance": null,
+      "limitations": "No human-verified marks or feedback judgements. Contract validity/bounds are not semantic accuracy. Cases are synthetic tests, not a new dataset.",
+      "configuration": {
+        "phase": "experimental_prompt",
+        "model": {
+          "name": "qwen2.5:3b",
+          "model": "qwen2.5:3b",
+          "modified_at": "2026-11-15T21:27:24.7796259+05:00",
+          "size": 1929912432,
+          "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "3.1B",
+            "quantization_level": "Q4_K_M",
+            "context_length": 32768,
+            "embedding_length": 2048,
+            "runner": "ggml"
+          },
+          "capabilities": [
+            "completion",
+            "tools"
+          ]
+        },
+        "ollama_version": {
+          "version": "0.40.16"
+        },
+        "options": {
+          "temperature": 0,
+          "seed": 42,
+          "num_thread": 4,
+          "num_gpu": 0,
+          "num_ctx": 8192,
+          "num_predict": 512
+        },
+        "device_policy": "CPU forced with num_gpu=0",
+        "started_at_utc": "2026-11-17T03:00:09.055770+00:00",
+        "human_labels": "none",
+        "case_source": "synthetic functional test scenarios; no accuracy labels",
+        "prompt_policy": "experimental_prompt",
+        "versions": {
+          "httpx": "0.28.1",
+          "Pillow": "12.3.0"
+        },
+        "source_sha256": "473e6842220b38b5e1287c726adc42d1ba373c9baab8bd1b4460002994e36413"
+      },
+      "runtime_seconds": 112.19621720000578,
+      "finished_at_utc": "2026-11-17T03:02:01.268343+00:00",
+      "predictions_sha256": "cf5091d2de2e07ea9e2fa5291523bd5c72efb3bb97aa377cbba1cf4c2a6e28da"
+    },
+    "experimental_schema": {
+      "total_cases": 11,
+      "cases_calling_model": 7,
+      "scored_cases": 3,
+      "abstained_cases": 8,
+      "failed_cases": 0,
+      "invalid_or_failed_assessment_rate_over_model_calls": 0.0,
+      "mechanical_mark_bound_violations": 0,
+      "human_verified_samples": 0,
+      "mean_absolute_mark_error": null,
+      "exact_mark_agreement": null,
+      "partial_credit_agreement": null,
+      "feedback_relevance": null,
+      "semantic_rubric_compliance": null,
+      "limitations": "No human-verified marks or feedback judgements. Contract validity/bounds are not semantic accuracy. Cases are synthetic tests, not a new dataset.",
+      "configuration": {
+        "phase": "experimental_schema",
+        "model": {
+          "name": "qwen2.5:3b",
+          "model": "qwen2.5:3b",
+          "modified_at": "2026-11-15T21:27:24.7796259+05:00",
+          "size": 1929912432,
+          "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "3.1B",
+            "quantization_level": "Q4_K_M",
+            "context_length": 32768,
+            "embedding_length": 2048,
+            "runner": "ggml"
+          },
+          "capabilities": [
+            "completion",
+            "tools"
+          ]
+        },
+        "ollama_version": {
+          "version": "0.40.16"
+        },
+        "options": {
+          "temperature": 0,
+          "seed": 42,
+          "num_thread": 4,
+          "num_gpu": 0,
+          "num_ctx": 8192,
+          "num_predict": 512
+        },
+        "device_policy": "CPU forced with num_gpu=0",
+        "started_at_utc": "2026-11-17T03:09:22.276489+00:00",
+        "human_labels": "none",
+        "case_source": "synthetic functional test scenarios; no accuracy labels",
+        "prompt_policy": "experimental_schema",
+        "versions": {
+          "httpx": "0.28.1",
+          "Pillow": "12.3.0"
+        },
+        "source_sha256": "c66a39b2ac20c9404ad9b83051b87db22c86fc3bb30ef7dd314b0b2898b5b760"
+      },
+      "runtime_seconds": 118.42626700000255,
+      "finished_at_utc": "2026-11-17T03:11:20.750528+00:00",
+      "predictions_sha256": "fdb2be4dcb25ab794867bd48390f62d9bd2691ba9f1327b875929e568d5874f6"
+    }
+  },
+  "matched_model_call_cases": [
+    "alternative_wording",
+    "intended_correct",
+    "intended_incorrect",
+    "intended_partial",
+    "off_topic",
+    "spelling_errors",
+    "very_short"
+  ],
+  "matched_before_invalid": 5,
+  "matched_final_invalid": 0,
+  "semantic_accuracy_measured": false,
+  "human_verified_samples": 0,
+  "accepted_output_schema": true,
+  "semantic_prompt_experiment_promoted": false,
+  "note": "Model output validity on synthetic tests is not human mark agreement. Guarded cases are counted as abstentions, not model successes."
+}

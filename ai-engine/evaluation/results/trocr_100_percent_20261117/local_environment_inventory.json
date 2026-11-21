@@ -1,0 +1,20 @@
+{
+  "created_at_utc": "2026-11-17T13:31:23.036970+00:00",
+  "os": "nt",
+  "python": "3.12.9 (Pylance-selected academix .venv)",
+  "physical_ram_gib": 15.68770980834961,
+  "available_ram_gib": 1.4345893859863281,
+  "cached_huggingface_model_repositories": [
+    "models--laion--CLIP-ViT-B-32-laion2B-s34B-b79K",
+    "models--microsoft--trocr-base-handwritten"
+  ],
+  "installed_optional_ocr_modules": {
+    "pytesseract": false,
+    "easyocr": false,
+    "paddleocr": false,
+    "doctr": false,
+    "onnxruntime": false
+  },
+  "tesseract_executable": null,
+  "no_downloads_or_model_loads_performed": true
+}

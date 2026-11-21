@@ -1,0 +1,23 @@
+{
+  "protected_sha256_unchanged": {
+    "ai-engine/datasets/manifests/bentham/validation.jsonl": true,
+    "ai-engine/evaluation/results/bentham_trocr_validation_predictions.jsonl": true,
+    "ai-engine/evaluation/results/bentham_trocr_validation_metrics.json": true,
+    "ai-engine/evaluation/results/trocr_preprocessing_full_20261116/comparison.json": true,
+    "ai-engine/evaluation/results/trocr_preprocessing_full_20261116/configuration.json": true,
+    "ai-engine/evaluation/results/trocr_preprocessing_full_20261116/existing_validation_metrics.json": true,
+    "ai-engine/evaluation/results/trocr_preprocessing_full_20261116/existing_validation_predictions.jsonl": true,
+    "ai-engine/evaluation/results/trocr_preprocessing_full_20261116/paired_saved_baseline_metrics.json": true,
+    "ai-engine/evaluation/results/trocr_preprocessing_full_20261116/paired_validation_analysis.json": true,
+    "ai-engine/evaluation/results/trocr_preprocessing_full_20261116/paired_validation_examples.jsonl": true,
+    "ai-engine/evaluation/results/trocr_preprocessing_full_20261116/process_resource_final.json": true,
+    "ai-engine/evaluation/results/trocr_preprocessing_full_20261116/protocol.json": true,
+    "ai-engine/evaluation/results/trocr_preprocessing_full_20261116/resource_observation_144_samples.json": true,
+    "ai-engine/evaluation/results/trocr_preprocessing_full_20261116/RUNNING.json": true,
+    "ai-engine/evaluation/results/trocr_preprocessing_full_20261116/validation_image_diagnostics.json": true,
+    "academix.db": true
+  },
+  "frozen_sources_match_prechange_hashes": true,
+  "test_split_read_for_this_sprint": false,
+  "live_database_connected": false
+}

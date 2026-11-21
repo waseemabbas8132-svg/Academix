@@ -1,0 +1,171 @@
+from __future__ import annotations
+
+from dataclasses import dataclass
+
+from academix_ai.contracts import (
+    EvaluationResult,
+    ExtractedDocument,
+    QuestionInput,
+    QuestionScore,
+)
+from evaluation.answer_evaluator import OllamaAnswerEvaluator, segment_answers
+from evaluation.feedback_generator import overall_feedback
+from preprocessing.handwritten_ocr import (
+    HandwritingRecognizer,
+    TrOCRHandwritingRecognizer,
+)
+from preprocessing.text_extractor import extract_submission
+
+
+@dataclass(frozen=True)
+class EvaluationRequest:
+    submission_id: str
+    submission_text: str | None
+    files: list[tuple[str, bytes]]
+    questions: tuple[QuestionInput, ...]
+    assignment_total_marks: float
+
+
+class EvaluationPipeline:
+    def __init__(
+        self,
+        *,
+        recognizer: HandwritingRecognizer | None = None,
+        evaluator: OllamaAnswerEvaluator | None = None,
+        max_pages: int = 30,
+        max_total_bytes: int = 30 * 1024 * 1024,
+        low_confidence_threshold: float = 0.6,
+    ) -> None:
+        self.recognizer = recognizer or TrOCRHandwritingRecognizer()
+        self.evaluator = evaluator or OllamaAnswerEvaluator()
+        self.max_pages = max_pages
+        self.max_total_bytes = max_total_bytes
+        self.low_confidence_threshold = low_confidence_threshold
+
+    def extract(self, request: EvaluationRequest) -> ExtractedDocument:
+        return extract_submission(
+            request.submission_text,
+            request.files,
+            self.recognizer,
+            max_pages=self.max_pages,
+            max_total_bytes=self.max_total_bytes,
+            low_confidence_threshold=self.low_confidence_threshold,
+        )
+
+    def evaluate(
+        self,
+        request: EvaluationRequest,
+        extracted: ExtractedDocument | None = None,
+    ) -> EvaluationResult:
+        document = extracted or self.extract(request)
+        questions = request.questions
+        maximum_marks = sum(question.max_marks for question in questions)
+        model_name = getattr(self.evaluator, "model_name", "none")
+        model_version = getattr(self.evaluator, "model_version", "none")
+
+        if not questions:
+            warning = (
+                "No teacher answer key or rubric is configured; marks were not generated.",
+            )
+            warnings = document.warnings + warning
+            return EvaluationResult(
+                questions=(),
+                suggested_total=None,
+                maximum_marks=request.assignment_total_marks,
+                confidence=document.confidence or 0,
+                explanation="Only document extraction was performed.",
+                feedback=overall_feedback(
+                    has_rubric=False,
+                    warnings=warnings,
+                    scores=(),
+                ),
+                needs_review=True,
+                model_name=getattr(self.recognizer, "model_name", "none"),
+                model_version=getattr(self.recognizer, "model_version", "none"),
+                warnings=warnings,
+                metadata={"preliminary_only": True},
+            )
+
+        segmented, segmentation_failed = segment_answers(document.text, questions)
+        scores: list[QuestionScore] = []
+        for question in questions:
+            answer = segmented.get(question.question_id)
+            if segmentation_failed or answer is None:
+                scores.append(
+                    QuestionScore(
+                        question_id=question.question_id,
+                        suggested_marks=None,
+                        max_marks=question.max_marks,
+                        confidence=0,
+                        explanation=(
+                            "A response could not be reliably associated with this question."
+                        ),
+                        feedback="Please identify and review this answer manually.",
+                        needs_review=True,
+                    )
+                )
+                continue
+            scores.append(self.evaluator.evaluate(question, answer))
+
+        score_tuple = tuple(scores)
+        all_scored = all(score.suggested_marks is not None for score in score_tuple)
+        suggested_total = (
+            sum(score.suggested_marks or 0 for score in score_tuple)
+            if all_scored
+            else None
+        )
+        if suggested_total is not None and suggested_total > request.assignment_total_marks:
+            suggested_total = None
+            score_tuple = tuple(
+                QuestionScore(
+                    question_id=score.question_id,
+                    suggested_marks=None,
+                    max_marks=score.max_marks,
+                    confidence=0,
+                    explanation="Rubric maximum exceeded the assignment total.",
+                    feedback="Teacher review is required before marks can be suggested.",
+                    evidence=score.evidence,
+                    needs_review=True,
+                )
+                for score in score_tuple
+            )
+
+        confidence_values = [score.confidence for score in score_tuple]
+        if document.confidence is not None:
+            confidence_values.append(document.confidence)
+        confidence = min(confidence_values, default=0)
+        warnings = list(document.warnings)
+        if segmentation_failed:
+            warnings.append(
+                "Question headings were not detected; answers were not assigned automatically."
+            )
+        if any(segment.needs_review for segment in document.segments):
+            warnings.append("One or more extracted sections have low OCR confidence.")
+        needs_review = (
+            segmentation_failed
+            or document.needs_review
+            or any(score.needs_review or score.suggested_marks is None for score in score_tuple)
+        )
+        warnings_tuple = tuple(dict.fromkeys(warnings))
+        explanation = (
+            "Marks are provisional and grounded in validated answer quotations."
+            if all_scored
+            else "One or more answers could not be scored reliably."
+        )
+        return EvaluationResult(
+            questions=score_tuple,
+            suggested_total=suggested_total,
+            maximum_marks=maximum_marks,
+            confidence=confidence,
+            explanation=explanation,
+            feedback=overall_feedback(
+                has_rubric=True,
+                warnings=warnings_tuple,
+                scores=score_tuple,
+            ),
+            needs_review=needs_review,
+            model_name=model_name,
+            model_version=model_version,
+            warnings=warnings_tuple,
+            metadata={"preliminary_only": False},
+        )

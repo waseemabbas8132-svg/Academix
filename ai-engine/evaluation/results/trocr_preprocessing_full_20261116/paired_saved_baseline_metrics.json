@@ -1,0 +1,14 @@
+{
+  "cer": 0.1735679078439698,
+  "wer": 0.4135741218495733,
+  "exact_match_accuracy": 0.059314954051796154,
+  "exact_matches": 71,
+  "total_evaluated_samples": 1197,
+  "successful_samples": 1197,
+  "failed_samples": 0,
+  "character_errors": 9402,
+  "reference_characters": 54169,
+  "word_errors": 4168,
+  "reference_words": 10078,
+  "failures": []
+}

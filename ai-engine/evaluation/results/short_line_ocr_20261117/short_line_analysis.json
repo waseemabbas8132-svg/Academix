@@ -1,0 +1,488 @@
+{
+  "created_at_utc": "2026-11-17T13:54:21.453893+00:00",
+  "scope": "Validation split only; 161 short lines analyzed; no model weights loaded.",
+  "sample_count": 161,
+  "full_short_line_metrics": {
+    "cer": 0.6907563025210084,
+    "wer": 1.0344827586206897,
+    "exact_match_accuracy": 0.18012422360248448,
+    "exact_matches": 29,
+    "total_evaluated_samples": 161,
+    "successful_samples": 161,
+    "failed_samples": 0,
+    "character_errors": 411,
+    "reference_characters": 595,
+    "word_errors": 180,
+    "reference_words": 174,
+    "failures": []
+  },
+  "character_edit_operation_counts": {
+    "insertion": 167,
+    "substitution": 234,
+    "deletion": 10
+  },
+  "most_common_character_substitutions": [
+    {
+      "reference": "C",
+      "prediction": ".",
+      "count": 15
+    },
+    {
+      "reference": "r",
+      "prediction": "n",
+      "count": 6
+    },
+    {
+      "reference": "C",
+      "prediction": "c",
+      "count": 5
+    },
+    {
+      "reference": "e",
+      "prediction": "i",
+      "count": 3
+    },
+    {
+      "reference": "n",
+      "prediction": ".",
+      "count": 3
+    },
+    {
+      "reference": "T",
+      "prediction": "t",
+      "count": 3
+    },
+    {
+      "reference": "t",
+      "prediction": "p",
+      "count": 3
+    },
+    {
+      "reference": "r",
+      "prediction": "s",
+      "count": 2
+    },
+    {
+      "reference": ":",
+      "prediction": "r",
+      "count": 2
+    },
+    {
+      "reference": "s",
+      "prediction": "w",
+      "count": 2
+    },
+    {
+      "reference": "s",
+      "prediction": " ",
+      "count": 2
+    },
+    {
+      "reference": "s",
+      "prediction": "d",
+      "count": 2
+    },
+    {
+      "reference": "u",
+      "prediction": "e",
+      "count": 2
+    },
+    {
+      "reference": "o",
+      "prediction": "r",
+      "count": 2
+    },
+    {
+      "reference": "a",
+      "prediction": " ",
+      "count": 2
+    },
+    {
+      "reference": "r",
+      "prediction": ".",
+      "count": 2
+    },
+    {
+      "reference": "e",
+      "prediction": "a",
+      "count": 2
+    },
+    {
+      "reference": "b",
+      "prediction": "r",
+      "count": 2
+    },
+    {
+      "reference": "R",
+      "prediction": "r",
+      "count": 2
+    },
+    {
+      "reference": "L",
+      "prediction": "l",
+      "count": 2
+    }
+  ],
+  "spacing_edit_count": 48,
+  "punctuation_edit_count": 85,
+  "failed_inference_count": 0,
+  "exact_line_count": 29,
+  "overworded_line_count": 40,
+  "possible_low_resolution_count": 25,
+  "possible_edge_contact_count": 0,
+  "annotation_marker_line_count": 4,
+  "by_reference_character_length": {
+    "1": {
+      "cer": 1.6097560975609757,
+      "wer": 0.926829268292683,
+      "exact_match_accuracy": 0.07317073170731707,
+      "exact_matches": 3,
+      "total_evaluated_samples": 41,
+      "successful_samples": 41,
+      "failed_samples": 0,
+      "character_errors": 66,
+      "reference_characters": 41,
+      "word_errors": 38,
+      "reference_words": 41,
+      "failures": []
+    },
+    "2": {
+      "cer": 0.6142857142857143,
+      "wer": 0.6285714285714286,
+      "exact_match_accuracy": 0.42857142857142855,
+      "exact_matches": 15,
+      "total_evaluated_samples": 35,
+      "successful_samples": 35,
+      "failed_samples": 0,
+      "character_errors": 43,
+      "reference_characters": 70,
+      "word_errors": 22,
+      "reference_words": 35,
+      "failures": []
+    },
+    "3": {
+      "cer": 0.5666666666666667,
+      "wer": 0.8571428571428571,
+      "exact_match_accuracy": 0.2,
+      "exact_matches": 4,
+      "total_evaluated_samples": 20,
+      "successful_samples": 20,
+      "failed_samples": 0,
+      "character_errors": 34,
+      "reference_characters": 60,
+      "word_errors": 18,
+      "reference_words": 21,
+      "failures": []
+    },
+    "4": {
+      "cer": 0.8529411764705882,
+      "wer": 1.3529411764705883,
+      "exact_match_accuracy": 0.23529411764705882,
+      "exact_matches": 4,
+      "total_evaluated_samples": 17,
+      "successful_samples": 17,
+      "failed_samples": 0,
+      "character_errors": 58,
+      "reference_characters": 68,
+      "word_errors": 23,
+      "reference_words": 17,
+      "failures": []
+    },
+    "5": {
+      "cer": 0.68,
+      "wer": 1.25,
+      "exact_match_accuracy": 0.2,
+      "exact_matches": 2,
+      "total_evaluated_samples": 10,
+      "successful_samples": 10,
+      "failed_samples": 0,
+      "character_errors": 34,
+      "reference_characters": 50,
+      "word_errors": 15,
+      "reference_words": 12,
+      "failures": []
+    },
+    "6": {
+      "cer": 0.7407407407407407,
+      "wer": 1.4444444444444444,
+      "exact_match_accuracy": 0.0,
+      "exact_matches": 0,
+      "total_evaluated_samples": 9,
+      "successful_samples": 9,
+      "failed_samples": 0,
+      "character_errors": 40,
+      "reference_characters": 54,
+      "word_errors": 13,
+      "reference_words": 9,
+      "failures": []
+    },
+    "7": {
+      "cer": 0.673469387755102,
+      "wer": 1.5,
+      "exact_match_accuracy": 0.0,
+      "exact_matches": 0,
+      "total_evaluated_samples": 7,
+      "successful_samples": 7,
+      "failed_samples": 0,
+      "character_errors": 33,
+      "reference_characters": 49,
+      "word_errors": 12,
+      "reference_words": 8,
+      "failures": []
+    },
+    "8": {
+      "cer": 0.1875,
+      "wer": 1.25,
+      "exact_match_accuracy": 0.25,
+      "exact_matches": 1,
+      "total_evaluated_samples": 4,
+      "successful_samples": 4,
+      "failed_samples": 0,
+      "character_errors": 6,
+      "reference_characters": 32,
+      "word_errors": 5,
+      "reference_words": 4,
+      "failures": []
+    },
+    "9": {
+      "cer": 0.5679012345679012,
+      "wer": 1.1666666666666667,
+      "exact_match_accuracy": 0.0,
+      "exact_matches": 0,
+      "total_evaluated_samples": 9,
+      "successful_samples": 9,
+      "failed_samples": 0,
+      "character_errors": 46,
+      "reference_characters": 81,
+      "word_errors": 14,
+      "reference_words": 12,
+      "failures": []
+    },
+    "10": {
+      "cer": 0.5666666666666667,
+      "wer": 1.3333333333333333,
+      "exact_match_accuracy": 0.0,
+      "exact_matches": 0,
+      "total_evaluated_samples": 9,
+      "successful_samples": 9,
+      "failed_samples": 0,
+      "character_errors": 51,
+      "reference_characters": 90,
+      "word_errors": 20,
+      "reference_words": 15,
+      "failures": []
+    }
+  },
+  "image_dimensions": {
+    "width_median": 127,
+    "height_median": 75,
+    "aspect_ratio_median": 1.5625,
+    "dark_pixel_fraction_median": 0.06256771397616467,
+    "laplacian_variance_median": 423.82605583392984
+  },
+  "previous_screen_short_subset": {
+    "sample_count": 6,
+    "variants": {
+      "existing": {
+        "sample_count": 6,
+        "metrics": {
+          "cer": 0.55,
+          "wer": 1.0,
+          "exact_match_accuracy": 0.0,
+          "exact_matches": 0,
+          "total_evaluated_samples": 6,
+          "successful_samples": 6,
+          "failed_samples": 0,
+          "character_errors": 11,
+          "reference_characters": 20,
+          "word_errors": 8,
+          "reference_words": 8,
+          "failures": []
+        },
+        "improved_regressed_unchanged": {
+          "unchanged": 4,
+          "improved": 2
+        },
+        "source": "Previously saved 43-line preprocessing screen; not a new inference run."
+      },
+      "contrast": {
+        "sample_count": 6,
+        "metrics": {
+          "cer": 0.65,
+          "wer": 1.0,
+          "exact_match_accuracy": 0.0,
+          "exact_matches": 0,
+          "total_evaluated_samples": 6,
+          "successful_samples": 6,
+          "failed_samples": 0,
+          "character_errors": 13,
+          "reference_characters": 20,
+          "word_errors": 8,
+          "reference_words": 8,
+          "failures": []
+        },
+        "improved_regressed_unchanged": {
+          "unchanged": 6
+        },
+        "source": "Previously saved 43-line preprocessing screen; not a new inference run."
+      },
+      "clahe": {
+        "sample_count": 6,
+        "metrics": {
+          "cer": 0.7,
+          "wer": 1.0,
+          "exact_match_accuracy": 0.0,
+          "exact_matches": 0,
+          "total_evaluated_samples": 6,
+          "successful_samples": 6,
+          "failed_samples": 0,
+          "character_errors": 14,
+          "reference_characters": 20,
+          "word_errors": 8,
+          "reference_words": 8,
+          "failures": []
+        },
+        "improved_regressed_unchanged": {
+          "unchanged": 5,
+          "regressed": 1
+        },
+        "source": "Previously saved 43-line preprocessing screen; not a new inference run."
+      },
+      "denoise": {
+        "sample_count": 6,
+        "metrics": {
+          "cer": 0.65,
+          "wer": 1.0,
+          "exact_match_accuracy": 0.0,
+          "exact_matches": 0,
+          "total_evaluated_samples": 6,
+          "successful_samples": 6,
+          "failed_samples": 0,
+          "character_errors": 13,
+          "reference_characters": 20,
+          "word_errors": 8,
+          "reference_words": 8,
+          "failures": []
+        },
+        "improved_regressed_unchanged": {
+          "unchanged": 6
+        },
+        "source": "Previously saved 43-line preprocessing screen; not a new inference run."
+      },
+      "deskew": {
+        "sample_count": 6,
+        "metrics": {
+          "cer": 0.65,
+          "wer": 1.0,
+          "exact_match_accuracy": 0.0,
+          "exact_matches": 0,
+          "total_evaluated_samples": 6,
+          "successful_samples": 6,
+          "failed_samples": 0,
+          "character_errors": 13,
+          "reference_characters": 20,
+          "word_errors": 8,
+          "reference_words": 8,
+          "failures": []
+        },
+        "improved_regressed_unchanged": {
+          "unchanged": 6
+        },
+        "source": "Previously saved 43-line preprocessing screen; not a new inference run."
+      },
+      "threshold": {
+        "sample_count": 6,
+        "metrics": {
+          "cer": 0.45,
+          "wer": 1.125,
+          "exact_match_accuracy": 0.16666666666666666,
+          "exact_matches": 1,
+          "total_evaluated_samples": 6,
+          "successful_samples": 6,
+          "failed_samples": 0,
+          "character_errors": 9,
+          "reference_characters": 20,
+          "word_errors": 9,
+          "reference_words": 8,
+          "failures": []
+        },
+        "improved_regressed_unchanged": {
+          "regressed": 1,
+          "unchanged": 2,
+          "improved": 3
+        },
+        "source": "Previously saved 43-line preprocessing screen; not a new inference run."
+      },
+      "aspect": {
+        "sample_count": 6,
+        "metrics": {
+          "cer": 0.5,
+          "wer": 1.0,
+          "exact_match_accuracy": 0.16666666666666666,
+          "exact_matches": 1,
+          "total_evaluated_samples": 6,
+          "successful_samples": 6,
+          "failed_samples": 0,
+          "character_errors": 10,
+          "reference_characters": 20,
+          "word_errors": 8,
+          "reference_words": 8,
+          "failures": []
+        },
+        "improved_regressed_unchanged": {
+          "improved": 2,
+          "unchanged": 4
+        },
+        "source": "Previously saved 43-line preprocessing screen; not a new inference run."
+      },
+      "margin": {
+        "sample_count": 6,
+        "metrics": {
+          "cer": 0.6,
+          "wer": 1.0,
+          "exact_match_accuracy": 0.0,
+          "exact_matches": 0,
+          "total_evaluated_samples": 6,
+          "successful_samples": 6,
+          "failed_samples": 0,
+          "character_errors": 12,
+          "reference_characters": 20,
+          "word_errors": 8,
+          "reference_words": 8,
+          "failures": []
+        },
+        "improved_regressed_unchanged": {
+          "unchanged": 5,
+          "improved": 1
+        },
+        "source": "Previously saved 43-line preprocessing screen; not a new inference run."
+      }
+    }
+  },
+  "ram_preflight": {
+    "physical_ram_gib": 15.68770980834961,
+    "available_ram_gib": 2.4236907958984375,
+    "memory_load_percent": 84,
+    "minimum_free_gib_for_inference": 2.5,
+    "inference_allowed": false,
+    "decision": "stop_before_model_load"
+  },
+  "source_sha256": {
+    "datasets\\manifests\\bentham\\validation.jsonl": "56aaaee040a6ea2548bc6d738568729ce5f25d82a46c2d30b52488755e3103f1",
+    "evaluation\\results\\trocr_preprocessing_full_20261116\\existing_validation_predictions.jsonl": "2733b59d24d1b9f80bc8917cb124f9679721777aebac897b85f48fef143410c0",
+    "evaluation\\results\\trocr_preprocessing_full_20261116\\validation_image_diagnostics.json": "d15d878781ec08e906c38f5c7b0de96cf1eeae152195f57b36edbf329c117349"
+  },
+  "classifications_not_inferable_from_saved_text_or_basic_diagnostics": [
+    "whether a specific polygon clipped a written stroke",
+    "whether a particular letter is visually ambiguous",
+    "whether a high Laplacian variance represents handwriting detail or noise"
+  ],
+  "contact_sheets": [
+    "short_line_contact_sheet_01.png",
+    "short_line_contact_sheet_02.png",
+    "short_line_contact_sheet_03.png",
+    "short_line_contact_sheet_04.png",
+    "short_line_contact_sheet_05.png",
+    "short_line_contact_sheet_06.png"
+  ]
+}

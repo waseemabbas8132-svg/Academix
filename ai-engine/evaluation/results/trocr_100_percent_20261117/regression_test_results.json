@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "test_files": [
+    "tests/test_ocr_preprocessing_experiments.py",
+    "tests/test_trocr_baseline.py",
+    "tests/test_pipeline.py"
+  ],
+  "passed": 49,
+  "failed": 0,
+  "duration_seconds": 4.88,
+  "interpreter": "..\\.venv\\Scripts\\python.exe",
+  "options": [
+    "-B",
+    "-p no:cacheprovider",
+    "--tb=short",
+    "--basetemp=<fresh-temp-directory>"
+  ],
+  "scope": "Regression tests only; no model checkpoint loaded."
+}

@@ -1,0 +1,26 @@
+{
+  "created_at_utc": "2026-11-17T13:31:23.036970+00:00",
+  "decoder_experiment": "not_run_safely",
+  "available_ram_gib_at_preflight": 1.4345893859863281,
+  "existing_experiment_runner_minimum_free_ram_gib": 2.5,
+  "reason": "Available RAM is below the existing 2.5 GiB pre-model-load safety guard; checkpoint loading and beam-search inference were not started.",
+  "configs_not_evaluated": [
+    {
+      "num_beams": 2,
+      "length_penalty": 1.0
+    },
+    {
+      "num_beams": 4,
+      "length_penalty": 1.0
+    },
+    {
+      "num_beams": 2,
+      "length_penalty": 0.8
+    }
+  ],
+  "cer": null,
+  "wer": null,
+  "exact_matches": null,
+  "runtime_seconds": null,
+  "production_change": false
+}
