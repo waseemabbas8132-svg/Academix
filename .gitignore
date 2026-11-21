@@ -104,3 +104,4 @@ __pycache__/
 .env
 build/
 .dart_tool/
+*.db
